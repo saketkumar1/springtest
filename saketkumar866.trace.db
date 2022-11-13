@@ -1,0 +1,18 @@
+2022-10-30 12:30:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, domain_name varchar(255), bio varchar(255), experience integer, first_name varchar(255), last_name varchar(255), user_name varchar(255), user_type integer, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, domain_name varchar(255), bio varchar(255), experience integer, first_name varchar(255), last_name varchar(255), user_name varchar(255), user_type integer, primary key (user_id)) [42001-214]
+2022-10-30 12:34:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, domain_name varchar(255), bio varchar(255), experience integer, first_name varchar(255), last_name varchar(255), user_name varchar(255), user_type integer, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, domain_name varchar(255), bio varchar(255), experience integer, first_name varchar(255), last_name varchar(255), user_name varchar(255), user_type integer, primary key (user_id)) [42001-214]
+2022-10-30 12:35:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into [*]user (domain_name, bio, experience, first_name, last_name, user_name, user_type, user_id) values (?, ?, ?, ?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+insert into user (domain_name, bio, experience, first_name, last_name, user_name, user_type, user_id) values (?, ?, ?, ?, ?, ?, ?, ?) [42001-214]
+2022-10-30 12:35:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.user_id as user_id1_0_, user0_.domain_name as domain_n2_0_, user0_.bio as bio3_0_, user0_.experience as experien4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.user_name as user_nam7_0_, user0_.user_type as user_typ8_0_ from [*]user user0_"; expected "identifier"; SQL statement:
+select user0_.user_id as user_id1_0_, user0_.domain_name as domain_n2_0_, user0_.bio as bio3_0_, user0_.experience as experien4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.user_name as user_nam7_0_, user0_.user_type as user_typ8_0_ from user user0_ [42001-214]
+2022-10-30 12:41:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, first_name varchar(255), last_name varchar(255), user_name varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, first_name varchar(255), last_name varchar(255), user_name varchar(255), primary key (user_id)) [42001-214]
+2022-10-30 12:43:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, first_name varchar(255), last_name varchar(255), user_name varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, first_name varchar(255), last_name varchar(255), user_name varchar(255), primary key (user_id)) [42001-214]
