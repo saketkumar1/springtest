@@ -11,17 +11,8 @@ import com.springrest.springtest.entities.User;
 public interface userServiceImpl {
 
 	
-public List<User> getAllUser();
+    public List<User> getAllUser();
 	
-	public userDetailDtro postUser(userDetailDtro user) ;
+	public User postUser(userDetailDtro user) ;
 	
-	
-	
-//	public void addintrest(intrest intrest);
-
-//	public List<Courses> getEnrolledCourses(long id);
-
-//	public userUpdateDto updateUser(long id, userUpdateDto user);
-	
-//	public List<Courses> getRecommend(long id);
 }

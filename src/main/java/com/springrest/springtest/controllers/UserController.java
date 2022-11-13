@@ -15,6 +15,7 @@ import com.springrest.springtest.dto.userDetailDtro;
 import com.springrest.springtest.entities.User;
 import com.springrest.springtest.repositories.userRepository;
 import com.springrest.springtest.service.userService;
+import com.springrest.springtest.service.userServiceImpl;
 
 @CrossOrigin("*") 
 @RestController
@@ -24,23 +25,22 @@ public class UserController {
 	
 	
 	@Autowired
-	userService userService;
+	userServiceImpl userService;
 	
-	@Autowired
-	userRepository userRepository;
+	
 	
 	
 	
 	
 	@GetMapping("/getAll")
 	public List<User> getAllUser(){
-	  return userRepository.findAll();	
+	  return userService.getAllUser();
 	}
 	
 	
 	@PostMapping("/Add")
-	public User postUser(@RequestBody  User user) {
-		return userRepository.save(user);
+	public User postUser(@RequestBody userDetailDtro user) {
+		return userService.postUser(user);
 
 	}
 	
